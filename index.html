@@ -1,55 +1,74 @@
-<!DOCTYPE HTML>
-<!-- This is how HTML comments look like -->
+<!DOCTYPE html>
 <html>
-
 <head>
+
   <!-- Add a title element, it will appear on the web page tab of your browser window  -->
-  
+  <title>Inquisitive Interests Survey</title>
+
 </head>
 
 <body>
   <!-- As a survey form, we will need to submit the details, therefore we use HTML form, The action attribute specifies where to send the form-data when a form is submitted. -->
-
-  <!-- ||||||||||| CODE UNDER THIS LINE ||||||||||| -->
-
-
   <!-- Add a form with the action set to https://www.radicalx.co/ -->
+  <form action="https://www.radicalx.co" method="post">
+
+    <!-- Add a generic container with the align="center" attribute -->
+    <div align="center">
+
+      <!-- Adds a heading to the form -->
+      <h1>Inquisitive Survey form</h1>
 
 
-  <!-- Add a generic container with the align="center" attribute -->
-  
-
-  <!--Adds a heading to the form-->
- 
-
-
-  <!-- Input type text for small texts, specify size, maxlength, & value -->
- 
+      <label for="name">Enter your name:</label>
+      <!-- Input type text for small texts, specify size, maxlength, & value -->
+      <!-- Add an HTML tag to define a line break -->
+      <input type="text" name="name" size="30" maxlength="100" value=""><br><br>
 
 
-  <!-- Add an HTML tag to define a line break -->
+      <label for="profession">Enter your profession:</label>
+      <!-- Input type text for small texts, specify size, maxlength, & value -->
+      <!-- Add an HTML tag to define a line break -->
+      <input type="text" name="profession" size="30" maxlength="100" value=""><br><br>
 
-  <!-- Input type text for small texts,  size, maxlength, & value -->
- 
-  <!-- Use a HTML element that defines a multi-line text input control -->
+
+      <label for="comment">Tell us a little about yourself:</label>
+      <!-- Input type text for small texts,  size, maxlength, & value -->
+      <!-- Use a HTML element that defines a multi-line text input control -->
+      <textarea name="comment" rows="5" cols="40"></textarea><br><br>
 
 
-  <!-- Input type radio buttons help you choose one out of the several values -->
-  
-  <!-- Add an HTML tag to define a line break -->
- 
-  
-  <!-- Use an HTML element to define a paragraph. -->
-  <!-- Inside the paragrapgh elment add an Input type Checkbox lets you select multiple options -->
-  
+      <label for="choice">Do you exercise at home?</label>
+      <!-- Input type radio buttons help you choose one out of the several values -->
+      <!-- Add an HTML tag to define a line break -->
+      <input type="radio" name="choice" value="yes" checked> Yes
+      <input type="radio" name="choice" value="no"> No<br><br>
 
-  <!-- Add HTML element to create multiple dropdown options-->
-  
-  <!-- Add an HTML tag to define a line break -->
 
-  <!-- Submits the information entered in the form by the user -->
-  
+       <!-- Add an Input type Checkbox lets you select multiple options -->
+       <label for="interests">How do you like to read about your favourite topics?</label><br><br>
+       <input type="checkbox" name="interests" value="television"> Television
+       <input type="checkbox" name="interests" value="magazine"> Magazine
+       <input type="checkbox" name="interests" value="books"> Books
+       <input type="checkbox" name="interests" value="resources"> Online Resources
+       <input type="checkbox" name="interests" value="apps"> Phone Apps<br><br>
 
+
+        <!-- Add an Input type Checkbox lets you select multiple options -->
+        <label for="genre">What genre of movies do you like?</label>
+        <select name="genre">
+          <option value="sci-fi">Sci-fi</option>
+          <option value="romance">Romance</option>
+          <option value="thriller">Thriller</option>
+          <option value="horror">Horror</option>
+          <option value="comedy">Comedy</option>
+          <option value="action">Action</option>
+        </select><br><br>
+
+
+        <!-- Submits the information entered in the form by the user -->
+        <input type="submit" value="Submit form">
+
+    </div>
+  </form>
 </body>
-
 </html>
